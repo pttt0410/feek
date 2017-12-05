@@ -2,33 +2,6 @@
 
 Feek is a shopify app. It helps customers know about product and service quality. And Feek also help seller forward product and customers
 
-### Installing
-
-**Step 1: Download source code**
-
- - Case 1: Drectly download from https://github.com/pttt0410/feek
- 
- - Case 2: Open git: git clone https://github.com/pttt0410/feek.git
- 
-**Step 2: Install libaries (open git)**
-   
-    npm install 
- 
-**Step 3: Run**
-
-    npm start
-  
-**Step 4: Access web browers (Chorme/ CocCoc/ Internet Explore)**
-  
- https://khongkhong.myshopify.com/
- 
- ### Libary
-Express Framework Nodejs (https://expressjs.com/)
-
-shopify-node-api (https://www.npmjs.com/package/shopify-node-api)
-
-shopify-api-node (https://www.npmjs.com/package/shopify-api-node)
-
  ### Feature
 Set up and sign in through Shopify
 
@@ -58,6 +31,39 @@ Feedback will be performed in product
 Moreover, Owner shop also can forward feedback of customers on admin page. If feedback is unsatisfied, it will be drawn red color
 
 ![](https://github.com/pttt0410/feek/blob/master/images/admin.png)
+
+### Installing
+
+**Step 1: Download source code**
+
+ - Case 1: Drectly download from https://github.com/pttt0410/feek
+ 
+ - Case 2: Open git: git clone https://github.com/pttt0410/feek.git
+ 
+**Step 2: Install libaries (open git)**
+   
+    npm install 
+ 
+**Step 3: Run**
+
+    npm start
+  
+  Server is running at port 3000
+ 
+### Deployment
+   cd <SavePath>/feek/config/token.js
+       module.exports = {
+       API_KEY: <Your_API_key>,
+       API_SECRET: <Your_API_secret>
+       };
+ 
+ ### Libary
+Express Framework Nodejs (https://expressjs.com/)
+
+shopify-node-api (https://www.npmjs.com/package/shopify-node-api)
+
+shopify-api-node (https://www.npmjs.com/package/shopify-api-node)
+
 
 ### Project folder
 
