@@ -1,0 +1,31 @@
+{
+  "name": "feek",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ThuyTrang",
+  "license": "ISC",
+  "dependencies": {
+    "auth": "0.0.9",
+    "body-parser": "^1.18.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "^4.16.1",
+    "express-handlebars": "^3.0.0",
+    "express-mysql-session": "^1.2.2",
+    "express-session": "^1.15.6",
+    "handlebars": "^4.0.10",
+    "http": "0.0.0",
+    "moment": "^2.18.1",
+    "morgan": "^1.9.0",
+    "mustache": "^2.3.0",
+    "mysql": "^2.14.1",
+    "oauth": "^0.9.15",
+    "path": "^0.12.7",
+    "q": "^1.5.0",
+    "shopify-api-node": "^2.9.0",
+    "shopify-node-api": "^1.8.0"
+  }
+}

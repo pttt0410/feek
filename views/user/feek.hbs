@@ -1,0 +1,107 @@
+(function() {
+	var baseUrl = 'https://24eecb63.ngrok.io';
+	//   	var para = document.createElement("iframe");
+	//    para.setAttribute('id','trangframe');
+	//    para.innerHTML = 'Taarang Trang';
+	//    para.src ='https://24eecb63.ngrok.io/test';
+	// para.style.width = "800px";
+	// para.style.height = "600px";				     
+	//    document.body.appendChild(para);
+	var script = document.createElement("SCRIPT");
+	script.src = 'https://code.jquery.com/jquery-3.2.1.js';
+	script.type = 'text/javascript';
+	var bs = document.createElement('link');
+	bs.setAttribute('rel', 'stylesheet');
+	bs.setAttribute('type', 'text/css');
+	bs.setAttribute('href', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+	var ax = document.createElement('link');
+	ax.setAttribute('rel', 'stylesheet');
+	ax.setAttribute('type', 'text/css');
+	ax.setAttribute('href', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+	script.onload = function() {
+		document.getElementsByTagName("head")[0].appendChild(bs);
+		document.getElementsByTagName("head")[0].appendChild(ax);
+		var bss = script = document.createElement("SCRIPT");
+		bss.src = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js';
+		bss.type = 'text/javascript';
+		bss.onload = function() {
+			var $ = window.jQuery;
+			var Mdiv = document.createElement('div');
+			Mdiv.setAttribute('class', 'modal fade');
+			Mdiv.setAttribute('id', 'myModal');
+			
+			Mdiv.innerHTML = '<div class="modal-dialog" style = "width:800px; height:600px;">' +
+				'<div class="modal-content">' +
+				'<div class="modal-body" style="background-color:#0babb7" >' +
+				'<center>' +
+				'<button type="button" class="close" data-dismiss="modal">&times;</button>' +
+				'<a data-toggle="modal" href="#myModal2" ><img src="' + baseUrl + '/image/normal.jpg" title="Bình thường"> </a>' +
+				'<p><a data-toggle="modal" href="#myModal2" ><img src="' + baseUrl + '/image/unhappy1.jpg" title="Không hài lòng" > </a>' +
+				'<img src="' + baseUrl + '/image/tree1.jpg" >' +
+				'<a data-toggle="modal" href="#myModal2" ><img src="' + baseUrl + '/image/happy1.jpg" title="Hài lòng"> </a> </p>' +
+				'<h3 style="color:#e0f5f5">ĐÁNH GIÁ VỀ SẢN PHẨM </h3>' +
+				'</center>' +
+				'</div>' +
+				'</div>' +
+				'</div>' +
+				
+				///////////////////////////////////////////////////////////////////
+				'<div class="modal fade rotate" id="myModal2">' +
+				'<div class="modal-dialog" style="width:800px; height:600px;">' +
+				'<div class="modal-content" style="background-color:#0babb7">' +
+				'<div class="modal-body">' +
+				'<center>' +
+				'<button type="button" class="close" data-dismiss="modal">&times;</button>' +
+				'<h3 style="color:#e0f5f5">Chia sẻ với FEEK nhận xét </h3>' +
+				'<h3 style="color:#e0f5f5">về sản phẩm và dịch vụ giao hàng nhé! </h3>' +
+				'<div class ="form-group">'+
+
+                '<input type="text" id="fullname" placeholder="Tên khách hàng">'+
+                '</div>'+
+				'<textarea rows="4" cols="80" id = "comment">' +
+				'</textarea> ' +
+				'<img src="' + baseUrl + '/image/tree1.jpg">' +
+
+				'<h3 style="color:#e0f5f5">FEEK CẢM ƠN BẠN</h3>' +
+				'<button type="submit" class="btn btn-success" id="com-btn">SUBMIT </button>' +
+				'</center>' +
+				
+
+				'</div>' +
+				'</div>' +
+				'</div>';
+				
+
+
+			$("body").append($(Mdiv));
+			$('#com-btn').on('click', function() {
+				var data = {
+					Comment: $('#comment').val(),
+					Email: $('#fullname').val()
+				};
+				$.ajax({
+					url: baseUrl + '/user',
+					method: "POST",
+					// contentType:'application/json',
+					data: data,
+					success: function(response) {
+						console.log('success');
+						console.log(response);
+						//     $('#result').html(result);
+					},
+					error: function(err) {
+						alert(err);
+					}
+				});
+			});
+			$('#myModal').modal('show');
+
+
+		};
+		document.getElementsByTagName("head")[0].appendChild(bss);
+		
+		$( '<iframe src = "https://24eecb63.ngrok.io/fb" width="500" height="300" ></iframe>' ).appendTo( ".social-sharing" );
+	};
+	document.getElementsByTagName("head")[0].appendChild(script);
+
+})();

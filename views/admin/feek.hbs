@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Database</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/assests/style/css.css">
+  <link rel="stylesheet" media="screen" href="/assests/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<div class = "wrapper">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li> <a href = "#"> <img src="image/logo.png" width="40"> FEEK</a> </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+        
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class = "glyphicon glyphicon-user"> PHAN THI THUY TRANG <span class="caret"></span> </span></a>
+              <ul class="dropdown-menu">
+                <li> <a href="#"> My profile </a> </li>
+                <li> <a href="#"> Setting </a> </li>
+                <li> <a href="#"> Log out </a> </li>
+              </ul>
+            </li>
+             </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+    
+</nav>
+<div class = "row">
+  <div class = "col-sm-2">
+    <ul class="nav nav-pills nav-stacked">
+
+          <li> <a href="/admin"> <span class = "glyphicon glyphicon-th-list"> FEEDBACK </span></a> </li>
+           <li> <a href="/admin/thongke"> <span class = "glyphicon glyphicon-stats"> THONG KE </span></a> </li>
+            <li> <a href="setting.html"><span class = "glyphicon glyphicon-cog"> CAI DAT </span></a> </li>
+    </ul>
+  </div>
+  <div class = "col-sm-10">
+    <canvas id="barChart" width="150" height="60"></canvas>
+
+    <script>
+    var ctxB = document.getElementById("barChart").getContext('2d');
+    var myBarChart = new Chart(ctxB, {
+        type: 'bar',
+        data: {
+            labels: ["1", "2", "3", "4", "5"],
+            datasets: [{
+                label: '# of Votes',
+                data: [0, 5, 12, 19, 6],
+                backgroundColor: [
+                   
+                   'rgba(54, 162, 235, 0.2)',
+                   'rgba(255, 206, 86, 0.2)',
+                   'rgba(255, 99, 132, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                   'rgba(153, 102, 255, 0.2)',
+                  // 'rgba(255, 159, 64, 0.2)'
+                  // 'rgba(255, 159, 64, 0.2)',
+                  // 'rgba(54, 162, 235, 0.2)',
+                  // 'rgba(255, 99, 132, 0.2)',
+                  // 'rgba(153, 102, 255, 0.2)',
+                ],
+                borderColor: [
+                  
+                    'rgba(54, 162, 235, 1)',
+                   'rgba(255, 206, 86, 1)',
+                   'rgba(255,99,132,1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                 //  'rgba(255, 159, 64, 1)'
+
+                ],
+                borderWidth: 1
+            }]
+        },
+        optionss: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero:true
+                    }
+                }]
+            }
+        }
+    });
+                
+
+
+    </script>
+    
+  </div>
+</div>
+</div>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

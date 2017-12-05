@@ -1,0 +1,93 @@
+<div class="container">
+    <a data-toggle="modal" data-target="#myModal" class="btn btn-primary">FEEDBACK</a>
+    <div class="modal face" id="myModal" role="dialog">
+        <div class="modal-dialog" style="width:800px; height:600px">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <table>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                    <a data-toggle="modal" data-target="#myModal2"><img src="image/normal.jpg" title="Bình thường"> </a>
+                                </td>
+                                <td>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td>
+                                    <a href="#"><img src="image/unhappy1.jpg" title="Không hài lòng" > </a>
+                                </td>
+                                <td>
+                                    <img src="image/tree1.jpg">
+                                </td>
+                                <td>
+                                    <a href="#"><img src="image/happy1.jpg" title="Hài lòng"> </a>
+                                </td>
+                                <td>
+                                </td>
+                            </tr>
+                        </table>
+                        <h3 style="color:#e0f5f5">ĐÁNH GIÁ VỀ SẢN PHẨM </h3>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade rotate" id="myModal2">
+        <div class="modal-dialog" style="width:800px; height:600px">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <center>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 style="color:#e0f5f5">Chia sẻ với FEEK nhận xét </h3>
+                        <h3 style="color:#e0f5f5">về sản phẩm và dịch vụ giao hàng nhé! </h3>
+                        <table>
+                            <tr>
+                                <td>
+                                    <textarea rows="6" cols="50">
+                                    </textarea>
+                                    <center>
+                                        <h3 style="color:#e0f5f5">FEEK CẢM ƠN BẠN  </h3> </center>
+                                </td>
+                                <td>
+                                    <img src="image/tree1.jpg">
+                                </td>
+                        </table>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+    (function() {
+        var script = document.createElement("SCRIPT");
+        script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
+        script.type = 'text/javascript';
+        script.onload = function() {
+            var $ = window.jQuery;
+            $(document).ready(function() {
+
+                $('#openBtn').click(function() {
+                    $('#myModal').modal({
+                        show: true
+                    })
+                });
+                $('#myModal').on('hidden', function() {
+
+                    $('#myModal1').modal('show')
+                })
+            });
+        };
+        document.getElementsByTagName("head")[0].appendChild(script);
+    })();
+    </script>
+    </body>

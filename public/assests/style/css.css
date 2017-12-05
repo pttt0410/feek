@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	padding:0;
+	margin:0;
+}
+
+.wrapper
+{
+	width: 1200px;
+	height: auto;
+	margin: auto;
+}
+.wrapper1
+{
+	width: 600px;
+	height: auto;
+	margin: auto;
+}
+.color p
+{
+	background: blue;
+}
+.modal-body{
+	background-color: #0babb7;
+}
