@@ -27,7 +27,7 @@ Set up and sign in through Shopify
 
 ![](https://github.com/pttt0410/feek/blob/master/images/set-up.png)
 
-Customers buy product in shop
+Customers select and buy product in shop
 
 ![](https://github.com/pttt0410/feek/blob/master/images/home.png)
 
@@ -37,7 +37,11 @@ Next two days, Customers will receive notification form shop
 
 
 Customers note feedback product of shop
-
+Feek has three status.
++ Hammer is unsatisfied status
++ Face is normal status
++ Sprinkler is satisfied status
+Customer will select one in three symbol
 ![](https://github.com/pttt0410/feek/blob/master/images/feedback.png)
 
 ![](https://github.com/pttt0410/feek/blob/master/images/feedback-2.png)
@@ -58,7 +62,10 @@ Moreover, Owner shop also can forward feedback of customers on admin page. If fe
 
 ### Author
 
-Họ tên: Phan Thị Thùy Trang
-
+Ly Hoàng - ly.hoang@gcalls.vn
+Trâm Trình - tram.trinh@intern.gcalls.vn
+Trang Phan - trang.phan@intern.gcalls.vn
+Uyên Bùi - uyen.bui@intern.gcalls.vn
+Thuy Nguyễn - thuy.nguyen@intern.gcalls.vn
 Email: trang.phan@intern.gcalls.co
 
