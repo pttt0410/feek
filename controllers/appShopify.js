@@ -93,7 +93,7 @@ r.get('/auth', function(req, res) {
 
                         req.session.name = data.shop.name;
                         console.log(req.session.config);
-                        shopNode.get('/admin/webhooks/count.json?address=https://24eecb63.ngrok.io//uninstall/', function(err, count) {
+                        shopNode.get('/admin/webhooks/count.json?address=https://27d4aecd.ngrok.io//uninstall/', function(err, count) {
                             if (err) {
                                 console.log('WEBHOOK: ' + error);
                             } else {
@@ -102,7 +102,7 @@ r.get('/auth', function(req, res) {
                                     var webhook_post = {
                                         'webhook': {
                                             "topic": "app\/uninstalled",
-                                            "address": "https://24eecb63.ngrok.io/uninstall/",
+                                            "address": "https://27d4aecd.ngrok.io/uninstall/",
                                             "format": "json"
                                         }
                                     }
@@ -133,7 +133,7 @@ var addScript = function(config, callback) {
         var post_data = {
             "script_tag": {
                 "event": "onload",
-                "src": "https:\/\/24eecb63.ngrok.io\/appShopify.js",
+                "src": "https:\/\/27d4aecd.ngrok.io\/appShopify.js",
                 "display_scope": "online_store"
             }
         }
