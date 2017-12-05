@@ -29,8 +29,6 @@ Set up and sign in through Shopify
 
 Customers select and buy product in shop
 
-![](https://github.com/pttt0410/feek/blob/master/images/home.png)
-
 ![](https://github.com/pttt0410/feek/blob/master/images/product.png)
 
 Next two days, Customers will receive notification form shop
