@@ -22,6 +22,13 @@ Feek is a shopify app. It helps customers know about product and service quality
   
  https://khongkhong.myshopify.com/
  
+ ### Libary
+Express Framework Nodejs (https://expressjs.com/)
+
+shopify-node-api (https://www.npmjs.com/package/shopify-node-api)
+
+shopify-api-node (https://www.npmjs.com/package/shopify-api-node)
+
  ### Feature
 Set up and sign in through Shopify
 
