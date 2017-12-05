@@ -51,11 +51,16 @@ Moreover, Owner shop also can forward feedback of customers on admin page. If fe
   Server is running at port 3000
  
 ### Deployment
-   cd <SavePath>/feek/config/token.js
-       module.exports = {
-       API_KEY: <Your_API_key>,
-       API_SECRET: <Your_API_secret>
-       };
+
+    cd <SavePath>/feek/config/token.js
+    
+        module.exports = {
+    
+        API_KEY: <Your_API_key>,
+        
+        API_SECRET: <Your_API_secret>
+        
+        };
  
  ### Libary
 Express Framework Nodejs (https://expressjs.com/)
