@@ -62,10 +62,10 @@ Moreover, Owner shop also can forward feedback of customers on admin page. If fe
 
 ### Author
 
-Ly Hoàng - ly.hoang@gcalls.vn
-Trâm Trình - tram.trinh@intern.gcalls.vn
-Trang Phan - trang.phan@intern.gcalls.vn
-Uyên Bùi - uyen.bui@intern.gcalls.vn
-Thuy Nguyễn - thuy.nguyen@intern.gcalls.vn
-Email: trang.phan@intern.gcalls.co
+Ly Hoàng - ly.hoang@gcalls.co
+Trâm Trình - tram.trinh@intern.gcalls.co
+Trang Phan - trang.phan@intern.gcalls.co
+Uyên Bùi - uyen.bui@intern.gcalls.co
+Thùy Nguyễn - thuy.nguyen@intern.gcalls.co
+
 
